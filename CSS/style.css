@@ -3093,7 +3093,10 @@ html.page-domains .nav-links .active::after {
         }
 
         html.page-projects .idea-btn {
-            margin-top: 25px;
+            position:relative;
+            top: 20px;
+            
+            margin-top: 60px;
             border: none;
             background: #2563EB;
             color: #fff;
@@ -3169,7 +3172,7 @@ html.page-projects .modal:target {
         html.page-projects .submit-btn {
             display: block;
             width: 100%;
-            padding: 14px;
+            padding: 16px;
             border: none;
             background: #2563EB;
             color: white;
