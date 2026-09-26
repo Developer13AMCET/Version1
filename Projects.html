@@ -1,258 +1,335 @@
 <!DOCTYPE html>
 <html lang="en" class="page-projects">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADIC Projects</title>
+    <title>ADIC — Projects &amp; Initiatives</title>
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Shared CSS -->
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
-
-        <div class="logo">
-
-            <img src="assets/logo.jpeg" alt="ADIC Logo" class="adic-logo">
-
-            <div class="logo-text">
-
-                <span class="logo-main">AMCET DIGITAL INNOVATION CELL</span>
-
-            </div>
-
-        </div>
-
-        <ul class="nav-links">
-
-            <li>
-                <a href="index.html">
-                    Home
-                </a>
-            </li>
-
-            <li>
-                <a href="index.html#vision">
-                    Why We Exist
-                </a>
-            </li>
-
-            <li>
-                <a href="domains.html">
-                    Technology Domain
-                </a>
-            </li>
-
-            <li>
-                <a href="Projects.html" class="active">
-                    Projects
-                </a>
-            </li>
-
-            <li>
-                <a href="index.html#join">
-                    Join ADIC
-                </a>
-            </li>
-
-            <li>
-                <a href="index.html#contact">
-                    Contact
-                </a>
-            </li>
-
-        </ul>
-
-    </nav>
-
-
-    <!-- HERO -->
-
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <span class="hero-tag">
-                ADIC PROJECTS
-            </span>
-
-            <h1>
-                Projects & Initiatives
-            </h1>
-
-            <p>
-                Building innovative digital solutions that improve
-                campus life and empower students through technology.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
-
-    <section class="projects">
-
-        <!-- ONGOING PROJECT -->
-
-        <div class="project-card">
-
-            <span class="status ongoing">
-                🚍 ONGOING PROJECT
-            </span>
-
-            <h2>
-                Smart Bus Tracking System
-            </h2>
-
-            <p>
-                A real-time bus tracking platform helping students
-                monitor bus locations, arrival times and routes
-                directly from their mobile devices.
-            </p>
-
-            <div class="progress-info">
-                Development Progress
-            </div>
-
-            <div class="tech-stack">
-                <span>Flutter</span>
-                <span>Supabase</span>
-                <span>Google Maps</span>
-                <span>GPS</span>
-            </div>
-
-        </div>
-
-
-        <!-- UPCOMING PROJECT -->
-
-        <div class="project-card">
-
-            <span class="status upcoming">
-                📱 UPCOMING PROJECT
-            </span>
-
-            <h2>
-                Smart College App
-            </h2>
-
-            <p>
-                An all-in-one platform integrating attendance,
-                notifications, academic resources, events and
-                student services into a single application.
-            </p>
-
-            <div class="planning-badge">
-                Planning Stage
-            </div>
-
-            <div class="tech-stack">
-                <span>Flutter</span>
-                <span>Node.js</span>
-                <span>MongoDB</span>
-                <span>Cloud</span>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- IDEA SECTION -->
-
-    <section class="idea-section">
-
-        <h2>
-            Have an Idea?
-        </h2>
-
-        <p>
-            Every innovation begins with an idea.
-            Share yours with ADIC and help build solution
-        </p>
-
-        <a href="#ideaModal" class="idea-btn">
-            Submit Your Idea
-        </a>
-
-    </section>
-
-
-    <!-- MODAL FORM -->
-
-    <div class="modal" id="ideaModal">
-
-        <div class="modal-content">
-
-            <a
-                href="#"
-                class="close-btn"
-                aria-label="Close">
-                &times;
+    <!-- =========================================================
+         NAVBAR (IDENTICAL ACROSS ALL PAGES)
+    ========================================================== -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html#home" class="logo" aria-label="ADIC Home">
+                <img src="assets/logo.jpeg" alt="ADIC Logo" class="adic-logo">
+                <div class="logo-text">
+                    <span class="logo-main">AMCET DIGITAL INNOVATION CELL</span>
+                    <span class="logo-sub">STUDENT-LED INITIATIVE</span>
+                </div>
             </a>
 
-            <h2>
-                Submit Your Idea
-            </h2>
+            <!-- Mobile Hamburger Toggle -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-            <form
-                action="https://formsubmit.co/monikagopi3@gmail.com"
-                method="POST">
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#vision">Why We Exist</a></li>
+                <li><a href="domains.html">Technology Domains</a></li>
+                <li><a href="Projects.html" class="active">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#join" class="nav-btn-join">Join ADIC</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                <input
-                    type="hidden"
-                    name="_captcha"
-                    value="false">
 
-                <input
-                    type="hidden"
-                    name="_next"
-                    value="https://developer13amcet.github.io/ADIC-Landing-page/Projects.html">
+    <!-- =========================================================
+         MAIN CONTENT
+    ========================================================== -->
+    <main>
 
-                <input
-                    type="text"
-                    name="fullName"
-                    placeholder="Full Name"
-                    required>
+        <!-- =====================================================
+             PROJECT HERO
+        ====================================================== -->
+        <section class="projects-hero">
+            <div class="container">
+                <div class="projects-hero-content">
+                    <span class="projects-label">ADIC PROJECTS</span>
+                    <h1 class="section-heading">Projects &amp; Initiatives</h1>
+                    <p class="section-sub">
+                        Explore innovative software solutions, smart mobility platforms, and intelligent computer vision applications developed by student teams to solve real-world problems.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-                <input
-                    type="text"
-                    name="department"
-                    placeholder="Department"
-                    required>
 
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Email Address"
-                    required>
+        <!-- =====================================================
+             PROJECT CARDS (FOLLOWING ESTABLISHED CARD STYLE)
+        ====================================================== -->
+        <section class="projects-section">
+            <div class="container">
+                <div class="projects-grid">
 
-                <input
-                    type="text"
-                    name="ideaTitle"
-                    placeholder="Idea Title"
-                    required>
+                    <!-- PROJECT 1: ZippyRide -->
+                    <article class="project-card">
+                        <span class="project-status ongoing">ONGOING</span>
+                        <h2>ZippyRide</h2>
+                        <p>
+                            ADIC's live bus tracking application that helps students monitor college buses in real time. GPS-enabled buses transmit telemetry so students can check routes and track arrival times effortlessly.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Flutter</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>GPS</span>
+                        </div>
+                        <a href="#" class="project-live-link" aria-label="View ZippyRide live project">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Link
+                        </a>
+                    </article>
 
-                <textarea
-                    name="description"
-                    rows="5"
-                    placeholder="Describe your idea..."
-                    required></textarea>
+                    <!-- PROJECT 2: AlumniLink -->
+                    <article class="project-card">
+                        <span class="project-status ongoing">ONGOING</span>
+                        <h2>AlumniLink</h2>
+                        <p>
+                            A dedicated platform connecting college alumni with current students. It empowers students with direct mentorship, alumni networking, career guidance, and mutual knowledge sharing across graduation cohorts.
+                        </p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="project-live-link" aria-label="View AlumniLink live project">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Link
+                        </a>
+                    </article>
 
-                <button
-                    type="submit"
-                    class="submit-btn">
-                    Submit Idea
-                </button>
+                    <!-- PROJECT 3: FounderForge -->
+                    <article class="project-card">
+                        <span class="project-status ongoing">ONGOING</span>
+                        <h2>FounderForge</h2>
+                        <p>
+                            A collaborative opportunity board where student founders and departments can post real development tasks, and skilled student engineers can find hands-on project experience in a freelancing model.
+                        </p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>JWT</span>
+                        </div>
+                        <a href="#" class="project-live-link" aria-label="View FounderForge live project">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Link
+                        </a>
+                    </article>
 
-            </form>
+                    <!-- PROJECT 4: RoadGuard AI -->
+                    <article class="project-card">
+                        <span class="project-status ongoing">ONGOING</span>
+                        <h2>RoadGuard AI</h2>
+                        <p>
+                            A road-safety computer vision application that detects potholes and road anomalies in real time using dashcam video feeds, helping municipal authorities and campus transport maintain safer roads.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>AI / ML</span>
+                            <span>Computer Vision</span>
+                            <span>Flutter</span>
+                        </div>
+                        <a href="#" class="project-live-link" aria-label="View RoadGuard AI live project">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Link
+                        </a>
+                    </article>
 
+                    <!-- PROJECT 5: Biometrics -->
+                    <article class="project-card">
+                        <span class="project-status ongoing">ONGOING</span>
+                        <h2>Biometrics</h2>
+                        <p>
+                            An automated facial-recognition attendance recording system designed to verify identity instantaneously, eliminating paper registers and manual queue bottlenecks for campus events and labs.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>Face Recognition</span>
+                            <span>AI / ML</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="#" class="project-live-link" aria-label="View Biometrics live project">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Link
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             SUBMIT IDEA SECTION
+        ====================================================== -->
+        <section class="submit-idea-section" id="submit-idea">
+            <div class="container">
+                <div class="submit-idea-content">
+                    <span class="projects-label">HAVE AN IDEA?</span>
+                    <h2>Your Idea Could Be Our Next Project.</h2>
+                    <p>
+                        Have a problem you want solved, a campus app concept, or an innovative experiment in mind? Share it with ADIC and let's collaborate to build it into reality.
+                    </p>
+
+                    <!-- CSS Toggle for Modal -->
+                    <input type="checkbox" id="idea-popup" class="idea-popup-toggle">
+                    <label for="idea-popup" class="submit-idea-btn">
+                        Submit Your Idea <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px;"></i>
+                    </label>
+
+                    <!-- IDEA MODAL -->
+                    <div class="idea-modal">
+                        <div class="idea-modal-box">
+                            <label for="idea-popup" class="modal-close" aria-label="Close modal">&times;</label>
+
+                            <div class="modal-header">
+                                <span class="projects-label">ADIC COLLABORATION</span>
+                                <h2>Submit Your Idea</h2>
+                                <p>Tell us about your idea and help us build something innovative together.</p>
+                            </div>
+
+                            <form id="ideaForm" action="https://formsubmit.co/monikagopi3@gmail.com" method="POST">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_subject" value="New ADIC Project Idea Submission">
+
+                                <div>
+                                    <label for="idea">What is your project idea?</label>
+                                    <textarea id="idea" name="idea" rows="3" placeholder="Briefly describe your concept or product idea..." required></textarea>
+                                </div>
+
+                                <div>
+                                    <label for="problem">What problem does it solve?</label>
+                                    <textarea id="problem" name="problem" rows="3" placeholder="What campus or community challenge does this address?" required></textarea>
+                                </div>
+
+                                <div>
+                                    <label for="email">Your Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email so we can reach out" required>
+                                </div>
+
+                                <button type="submit" class="modal-submit-btn">Submit Idea</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER (IDENTICAL ACROSS ALL PAGES)
+    ========================================================== -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <!-- Brand -->
+            <div class="footer-brand">
+                <div class="footer-logo-wrap">
+                    <img src="assets/logo.jpeg" alt="ADIC Logo" class="footer-logo-img">
+                    <div class="footer-logo-text">
+                        <div class="footer-logo-name">ADIC</div>
+                        <div class="footer-logo-sub">AMCET DIGITAL INNOVATION CELL</div>
+                    </div>
+                </div>
+                <p>
+                    A student-led initiative turning ideas into impactful digital solutions for our campus community.
+                </p>
+                <div class="footer-tagline">Think · Build · Innovate</div>
+
+                <div class="footer-contact-list">
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="footer-contact-info">
+                            <span>Email</span>
+                            <a href="mailto:adic@amcet.in">adic@amcet.in</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-location-dot" aria-hidden="true"></i>
+                        </div>
+                        <div class="footer-contact-info">
+                            <span>Campus</span>
+                            <a href="https://maps.google.com/?q=Annai+Mira+College+of+Engineering+and+Technology,+Ranipet,+Tamil+Nadu" target="_blank" rel="noopener noreferrer">AMCET, Ranipet, Tamil Nadu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#vision">Why We Exist</a></li>
+                    <li><a href="domains.html">Technology Domains</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="index.html#join">Join ADIC</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Domains -->
+            <div class="footer-col">
+                <h4>Domains</h4>
+                <ul>
+                    <li><a href="domains.html">Web Development</a></li>
+                    <li><a href="domains.html">Mobile App Development</a></li>
+                    <li><a href="domains.html">UI / UX Design</a></li>
+                    <li><a href="domains.html">AI &amp; Machine Learning</a></li>
+                    <li><a href="domains.html">Cloud &amp; DevOps</a></li>
+                    <li><a href="domains.html">Data Analytics</a></li>
+                </ul>
+            </div>
         </div>
 
-    </div>
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 ADIC &mdash; AMCET DIGITAL INNOVATION CELL. <span>ALL RIGHTS RESERVED.</span>
+            </p>
+            <div class="footer-socials">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/Amcet-Digital-Innovation-Cell" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:adic@amcet.in" title="Email Us" aria-label="Email Us">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Navigation Scripts -->
+    <script src="assets/main.js"></script>
 
 </body>
+
 </html>

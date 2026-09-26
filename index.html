@@ -4,567 +4,448 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADIC — AMCET Digital Innovation Cell</title>
 
-    <title>ADIC</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@700;800;900&family=Rajdhani:wght@600;700&display=swap"
-        rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- Shared CSS -->
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-
 
 <body>
 
     <!-- =========================================================
-         NAVBAR
-    ========================================================= -->
+         NAVBAR (IDENTICAL ACROSS ALL PAGES)
+    ========================================================== -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html#home" class="logo" aria-label="ADIC Home">
+                <img src="assets/logo.jpeg" alt="ADIC Logo" class="adic-logo">
+                <div class="logo-text">
+                    <span class="logo-main">AMCET DIGITAL INNOVATION CELL</span>
+                    <span class="logo-sub">STUDENT-LED INITIATIVE</span>
+                </div>
+            </a>
 
-    <nav class="navbar">
+            <!-- Mobile Hamburger Toggle -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-        <div class="logo">
-
-            <img src="assets/logo.jpeg" alt="ADIC Logo" class="adic-logo">
-
-            <div class="logo-text">
-
-                <span class="logo-main">AMCET DIGITAL INNOVATION CELL</span>
-
-            </div>
-
-        </div>
-
-
-        <ul class="nav-links">
-
-            <li>
-                <a href="#home" class="active">
-                    Home
-                </a>
-            </li>
-
-            <li>
-                <a href="#vision">
-                    Why We Exist
-                </a>
-            </li>
-
-            <li>
-                <a href="domains.html">
-                    Technology Domain
-                </a>
-            </li>
-
-            <li>
-                <a href="Projects.html">
-                    Projects
-                </a>
-            </li>
-
-            <li>
-                <a href="#join">
-                    Join ADIC
-                </a>
-            </li>
-
-            <li>
-                <a href="#contact">
-                    Contact
-                </a>
-            </li>
-
-        </ul>
-
-    </nav>
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home" class="active">Home</a></li>
+                <li><a href="index.html#vision">Why We Exist</a></li>
+                <li><a href="domains.html">Technology Domains</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#join" class="nav-btn-join">Join ADIC</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
     <!-- =========================================================
-         HERO
-    ========================================================= -->
+         MAIN CONTENT
+    ========================================================== -->
+    <main>
 
-    <section class="hero" id="home">
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+        <section class="hero" id="home">
+            <div class="hero-copy">
+                <span class="eyebrow">A STUDENT-LED INITIATIVE</span>
+                <h1>Building the Future of Our <span class="blue">Campus</span></h1>
+                <p>
+                    We are a passionate team of students dedicated to transforming ideas into real-world solutions that make our campus smarter, more connected, and future-ready.
+                </p>
 
-        <!-- LEFT CONTENT -->
-
-        <div class="hero-copy">
-
-            <div class="eyebrow">
-                A STUDENT-LED INITIATIVE
-            </div>
-
-            <h1>
-                Building the Future
-                <br>
-                of Our
-                <span class="blue">Campus</span>
-            </h1>
-
-            <p>
-                We are a passionate team of students dedicated to
-                transforming ideas into real-world solutions that
-                make our campus smarter, more connected, and future-ready.
-            </p>
-
-
-            <!-- AMCET + ADIC -->
-
-            <div class="logo-partnership">
-
-                <div class="institution-logo">
-
-                    <img src="assets/amcetlogo.jpeg" alt="AMCET Logo">
-
-
+                <div class="hero-actions">
+                    <a href="Projects.html" class="btn-primary">Explore Projects <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#join" class="btn-secondary">Join ADIC <i class="fa-solid fa-arrow-down"></i></a>
                 </div>
 
-
-                <div class="logo-divider"></div>
-
-
-                <div class="institution-logo">
-
-                    <img src="assets/logo.jpeg" alt="ADIC Logo">
-
-
-
+                <div class="hero-stats-row">
+                    <div class="hero-stat">
+                        <strong>13+</strong>
+                        <span>Developers</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="hero-stat">
+                        <strong>05+</strong>
+                        <span>Live Projects</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="hero-stat">
+                        <strong>09</strong>
+                        <span>Domains</span>
+                    </div>
                 </div>
 
+                <!-- AMCET + ADIC Partnership -->
+                <div class="logo-partnership">
+                    <div class="institution-logo">
+                        <img src="assets/amcetlogo.jpeg" alt="AMCET Logo">
+                    </div>
+                    <div class="logo-divider"></div>
+                    <div class="institution-logo">
+                        <img src="assets/logo.jpeg" alt="ADIC Logo">
+                    </div>
+                </div>
             </div>
 
-        </div>
-
-
-        <!-- RIGHT IMAGE -->
-
-        <div class="hero-image">
-
-            <img src="assets/building.jpeg" alt="AMCET Campus">
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================================================
-         WHY WE EXIST
-    ========================================================= -->
-
-    <section class="why-exist" id="vision">
-
-        <div class="section-title">
-
-            <p>
-                WHY WE EXIST
-            </p>
-
-        </div>
-
-
-        <div class="why-container">
-
-            <div class="why-content">
-
-                <p>
-                    ADIC was created to transform ideas into impactful solutions.
-                    We provide students with opportunities to innovate, build real-world
-                    projects, and contribute to the digital growth of our campus.
-                </p>
-
-                <p>
-                    By bringing together students, faculty, and technology enthusiasts,
-                    we foster a culture of collaboration, creativity, and continuous
-                    learning that prepares future leaders and innovators.
-                </p>
-
-                <p>
-                    It turns real-world client ideas into market-ready products,
-                    giving students hands-on software development experience while
-                    delivering measurable value to businesses.
-                </p>
-
+            <div class="hero-image">
+                <img src="assets/building.jpeg" alt="AMCET Campus">
             </div>
+        </section>
 
 
-            <div class="why-cards">
+        <!-- =====================================================
+             WHY WE EXIST
+        ====================================================== -->
+        <section class="why-exist" id="vision">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">WHY WE EXIST</span>
+                    <h2 class="section-heading">Transforming Ideas into Real Solutions</h2>
+                    <p class="section-sub">
+                        ADIC was created to cultivate a culture of innovation, creative problem-solving, and practical development experience.
+                    </p>
+                </div>
 
-                <div class="card">
+                <div class="why-container">
+                    <div class="why-content">
+                        <div class="why-highlight-box">
+                            <span class="why-badge">STUDENT INNOVATION</span>
+                            <h3>Bridging Classroom Learning with Real-World Engineering</h3>
+                            <p>
+                                ADIC was created to transform ideas into impactful solutions. We provide students with opportunities to innovate, build real-world projects, and contribute to the digital growth of our campus.
+                            </p>
+                            <p>
+                                By bringing together students, faculty, and technology enthusiasts, we foster a culture of collaboration, creativity, and continuous learning that prepares future leaders and innovators.
+                            </p>
+                        </div>
 
-                    <i class="fa-solid fa-user-graduate"></i>
+                        <ul class="why-points">
+                            <li><i class="fa-solid fa-circle-check"></i> Hands-on development of production-grade campus software</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Interdisciplinary teams across engineering departments</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Direct mentorship from faculty and student tech leads</li>
+                        </ul>
+                    </div>
 
-                    <h3>
-                        Student Driven
-                    </h3>
+                    <div class="why-cards">
+                        <div class="card">
+                            <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
+                            <h3>Student Driven</h3>
+                            <p>Empowering students to innovate through hands-on learning, ownership, and practical engineering.</p>
+                        </div>
 
-                    <p>
-                        Empowering students to innovate through hands-on learning.
+                        <div class="card">
+                            <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+                            <h3>Innovation</h3>
+                            <p>Building creative, resilient, and practical digital solutions to solve real everyday challenges.</p>
+                        </div>
+
+                        <div class="card">
+                            <i class="fa-solid fa-users" aria-hidden="true"></i>
+                            <h3>Collaboration</h3>
+                            <p>Working together across departments, uniting developers, designers, and domain enthusiasts.</p>
+                        </div>
+
+                        <div class="card">
+                            <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+                            <h3>Future Ready</h3>
+                            <p>Preparing students with modern tech stacks and real-world team development workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             OUR FOUNDATION / PURPOSE
+        ====================================================== -->
+        <section class="purpose-section" id="purpose">
+            <div class="container">
+                <div class="purpose-header">
+                    <span class="section-kicker">OUR FOUNDATION</span>
+                    <h2 class="section-heading">Driven by Purpose, Guided by Vision</h2>
+                    <p class="section-sub">
+                        ADIC exists to foster innovation, empower students, and create meaningful technological impact within our campus community.
+                    </p>
+                </div>
+
+                <div class="purpose-content">
+                    <div class="purpose-item">
+                        <h3>Mission</h3>
+                        <p>
+                            To cultivate a collaborative environment where students can explore emerging technologies, develop practical skills, and build innovative solutions that address real-world challenges.
+                        </p>
+                    </div>
+
+                    <div class="purpose-item">
+                        <h3>Vision</h3>
+                        <p>
+                            To become a leading student-driven innovation community recognized for creativity, technical excellence, and meaningful contributions to digital transformation.
+                        </p>
+                    </div>
+
+                    <div class="purpose-item">
+                        <h3>Values</h3>
+                        <p>
+                            Innovation, collaboration, continuous learning, leadership, inclusivity, and an unwavering commitment to creating positive impact through technology.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             FEATURED PROJECTS (ADDED TO HOME WITH ESTABLISHED CARDS)
+        ====================================================== -->
+        <section class="featured-projects-section" id="projects">
+            <div class="container">
+                <div class="projects-heading-row">
+                    <div>
+                        <span class="section-kicker">FEATURED PROJECTS</span>
+                        <h2 class="section-heading">Ideas That Became Real</h2>
+                        <p class="section-sub">Explore software products and smart mobility tools designed, built, and deployed by ADIC students.</p>
+                    </div>
+                    <a href="Projects.html" class="btn-view-all">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <span class="project-status ongoing">ONGOING</span>
+                        <h3>ZippyRide</h3>
+                        <p>
+                            ADIC's live bus tracking application that helps students monitor college buses in real time. GPS-enabled buses transmit location data so students can track routes and view the current bus location.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Flutter</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>GPS</span>
+                        </div>
+                        <a href="Projects.html" class="project-live-link" aria-label="View ZippyRide details">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Project Details
+                        </a>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <span class="project-status ongoing">ONGOING</span>
+                        <h3>AlumniLink</h3>
+                        <p>
+                            A platform designed to connect college alumni with currently studying students. It creates opportunities for mentorship, networking, career guidance, knowledge sharing, and meaningful professional connections.
+                        </p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="Projects.html" class="project-live-link" aria-label="View AlumniLink details">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Project Details
+                        </a>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <span class="project-status ongoing">ONGOING</span>
+                        <h3>FounderForge</h3>
+                        <p>
+                            A work and opportunity platform where people can post projects or tasks and skilled individuals can discover work opportunities. Follows a freelancing-style approach connecting talent with real needs.
+                        </p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>JWT</span>
+                        </div>
+                        <a href="Projects.html" class="project-live-link" aria-label="View FounderForge details">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Project Details
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             JOIN ADIC
+        ====================================================== -->
+        <section class="join-adic" id="join">
+            <div class="container">
+                <div class="join-left">
+                    <span class="section-kicker">JOIN ADIC</span>
+                    <h2 class="section-heading">Become Part of the Innovation Team</h2>
+                    <p class="section-sub">
+                        Join a community of passionate students who collaborate, innovate, and build impactful solutions for our campus. Gain hands-on experience, work on real-world projects, and grow alongside talented peers.
                     </p>
 
+                    <div class="join-benefits">
+                        <div class="benefit">
+                            <i class="fa-solid fa-code" aria-hidden="true"></i>
+                            <div>
+                                <h4>Real-World Projects</h4>
+                                <p>Build deployable software for campus operations and events.</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i class="fa-solid fa-users" aria-hidden="true"></i>
+                            <div>
+                                <h4>Team Collaboration</h4>
+                                <p>Work in agile sprints alongside developers and designers.</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                            <div>
+                                <h4>Mentorship &amp; Learning</h4>
+                                <p>Guidance on modern tech stacks and system architecture.</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+                            <div>
+                                <h4>Career &amp; Growth</h4>
+                                <p>Boost your portfolio with verified development contributions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="join-note-box">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span><strong>Who can apply?</strong> Open to motivated students from all departments and years. Passion to build and learn is all you need.</span>
+                    </div>
                 </div>
 
+                <div class="join-right">
+                    <form class="join-form" action="https://formsubmit.co/monikagopi3@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://developer13amcet.github.io/ADIC-Landing-page/">
 
-                <div class="card">
+                        <div class="input-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" autocomplete="name" required>
+                        </div>
 
-                    <i class="fa-solid fa-lightbulb"></i>
+                        <div class="input-group">
+                            <label for="department">Department</label>
+                            <input type="text" id="department" name="department" placeholder="e.g. CSE, IT, ECE, AIDS" required>
+                        </div>
 
-                    <h3>
-                        Innovation
-                    </h3>
+                        <div class="input-group">
+                            <label for="projects-worked">Projects Worked On</label>
+                            <textarea id="projects-worked" rows="3" name="projects_worked_on" placeholder="Describe any past projects or interests..." required></textarea>
+                        </div>
 
-                    <p>
-                        Building creative and practical digital solutions.
-                    </p>
+                        <div class="input-group">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" id="phone-number" name="phone_number" placeholder="+91 XXXXX XXXXX" autocomplete="tel" required>
+                        </div>
 
+                        <div class="input-group">
+                            <label for="email-address">Email Address</label>
+                            <input type="email" id="email-address" name="email" placeholder="example@gmail.com" autocomplete="email" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="area-of-interest">Area of Interest</label>
+                            <select id="area-of-interest" name="area_of_interest" required>
+                                <option value="" disabled selected>Select Domain</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="Mobile App Development">Mobile App Development</option>
+                                <option value="UI/UX Design">UI/UX Design</option>
+                                <option value="Cloud & DevOps">Cloud &amp; DevOps</option>
+                                <option value="Data Analytics">Data Analytics</option>
+                                <option value="AI & Machine Learning">AI &amp; Machine Learning</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="join-btn">Submit Application</button>
+                    </form>
                 </div>
-
-
-                <div class="card">
-
-                    <i class="fa-solid fa-users"></i>
-
-                    <h3>
-                        Collaboration
-                    </h3>
-
-                    <p>
-                        Working together with faculty, students, and departments.
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <i class="fa-solid fa-rocket"></i>
-
-                    <h3>
-                        Future Ready
-                    </h3>
-
-                    <p>
-                        Preparing students with real-world development experience.
-                    </p>
-
-                </div>
-
             </div>
+        </section>
 
-        </div>
 
-    </section>
+        <!-- =====================================================
+             CONTACT SECTION
+        ====================================================== -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-header">
+                    <span class="section-kicker">CONTACT US</span>
+                    <h2 class="section-heading">Connect With ADIC</h2>
+                    <p class="section-sub">
+                        Have questions, ideas, or collaboration opportunities? Reach out to us and become part of the innovation journey.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-box">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <h3>Email Us</h3>
+                        <a href="mailto:adic@amcet.in">adic@amcet.in</a>
+                    </div>
+
+                    <div class="contact-box">
+                        <i class="fas fa-location-dot" aria-hidden="true"></i>
+                        <h3>Campus Location</h3>
+                        <a href="https://maps.google.com/?q=Annai+Mira+College+of+Engineering+and+Technology,+Ranipet,+Tamil+Nadu" target="_blank" rel="noopener noreferrer">AMCET, Ranipet, TN</a>
+                    </div>
+
+                    <div class="contact-box">
+                        <i class="fas fa-users" aria-hidden="true"></i>
+                        <h3>Student Cell</h3>
+                        <a href="#join">Join the Innovation Team</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 
     <!-- =========================================================
-         PURPOSE
-    ========================================================= -->
-
-    <section class="purpose-section" id="purpose">
-
-        <div class="purpose-header">
-
-            <span>
-                OUR FOUNDATION
-            </span>
-
-            <h2>
-                Driven by Purpose, Guided by Vision
-            </h2>
-
-            <p>
-                ADIC exists to foster innovation, empower students,
-                and create meaningful technological impact within
-                our campus community.
-            </p>
-
-        </div>
-
-
-        <div class="purpose-content">
-
-            <div class="purpose-item">
-
-                <h3>
-                    Mission
-                </h3>
-
-                <p>
-                    To cultivate a collaborative environment where
-                    students can explore emerging technologies,
-                    develop practical skills, and build innovative
-                    solutions that address real-world challenges.
-                </p>
-
-            </div>
-
-
-            <div class="purpose-item">
-
-                <h3>
-                    Vision
-                </h3>
-
-                <p>
-                    To become a leading student-driven innovation
-                    community recognized for creativity, technical
-                    excellence, and meaningful contributions to
-                    digital transformation.
-                </p>
-
-            </div>
-
-
-            <div class="purpose-item">
-
-                <h3>
-                    Values
-                </h3>
-
-                <p>
-                    Innovation, collaboration, continuous learning,
-                    leadership, inclusivity, and a commitment to
-                    creating positive impact through technology.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================================================
-         JOIN ADIC
-    ========================================================= -->
-
-    <section class="join-adic" id="join">
-
-        <div class="join-left">
-
-            <span class="join-tag">
-                JOIN ADIC
-            </span>
-
-            <h2>
-                Become Part of the Innovation Team
-            </h2>
-
-            <p>
-                Join a community of passionate students who collaborate,
-                innovate, and build impactful solutions for our campus.
-                Gain hands-on experience, work on real-world projects,
-                and grow alongside talented peers and mentors.
-            </p>
-
-
-            <div class="join-benefits">
-
-                <div class="benefit">
-
-                    <i class="fa-solid fa-code"></i>
-
-                    <span>
-                        Real-World Projects
-                    </span>
-
-                </div>
-
-
-                <div class="benefit">
-
-                    <i class="fa-solid fa-users"></i>
-
-                    <span>
-                        Team Collaboration
-                    </span>
-
-                </div>
-
-
-                <div class="benefit">
-
-                    <i class="fa-solid fa-graduation-cap"></i>
-
-                    <span>
-                        Mentorship & Learning
-                    </span>
-
-                </div>
-
-
-                <div class="benefit">
-
-                    <i class="fa-solid fa-rocket"></i>
-
-                    <span>
-                        Innovation & Growth
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="join-right">
-
-            <form class="join-form" action="https://formsubmit.co/monikagopi3@gmail.com" method="POST">
-
-                <input type="hidden" name="_captcha" value="false">
-
-                <input type="hidden" name="_next" value="https://developer13amcet.github.io/ADIC-Landing-page/">
-
-
-                <div class="input-group">
-
-                    <label>
-                        Full Name
-                    </label>
-
-                    <input type="text" name="Full name" placeholder="Enter your name">
-
-                </div>
-
-
-                <div class="input-group">
-
-                    <label>
-                        Department
-                    </label>
-
-                    <input type="text" name="Department" placeholder="Department">
-
-                </div>
-
-
-                <div class="input-group">
-
-                    <label>
-                        Projects Worked On
-                    </label>
-
-                    <textarea rows="4" name="projects worked on" placeholder="Describe your projects"></textarea>
-
-                </div>
-
-
-                <div class="input-group">
-
-                    <label>
-                        Phone Number
-                    </label>
-
-                    <input type="tel" name="Phone number" placeholder="+91 XXXXX XXXXX">
-
-                </div>
-
-
-                <div class="input-group">
-
-                    <label>
-                        Email Address
-                    </label>
-
-                    <input type="email" name="Email" placeholder="example@gmail.com">
-
-                </div>
-
-
-                <div class="input-group">
-
-                    <label>
-                        Area of Interest
-                    </label>
-
-                    <select name="Area of interest">
-
-                        <option>
-                            Select Domain
-                        </option>
-
-                        <option>
-                            Web Development
-                        </option>
-
-                        <option>
-                            UI/UX Design
-                        </option>
-
-                        <option>
-                            Cloud & DevOps
-                        </option>
-
-                        <option>
-                            Data Analytics
-                        </option>
-
-                        <option>
-                            AI & Machine Learning
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <button type="submit" class="join-btn">
-                    Submit Application
-                </button>
-
-            </form>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================================================
-         CONTACT
-    ========================================================= -->
-
-    <section class="contact-section" id="contact">
-
-        <div class="contact-header">
-
-            <span>
-                CONTACT US
-            </span>
-
-            <h2>
-                Connect With ADIC
-            </h2>
-
-            <p>
-                Have questions, ideas, or collaboration opportunities?
-                Reach out to us and become part of the innovation journey.
-            </p>
-
-        </div>
-
-
-    </section>
+         FOOTER (IDENTICAL ACROSS ALL PAGES)
+    ========================================================== -->
     <footer class="site-footer">
-
         <div class="footer-grid">
-
             <!-- Brand -->
             <div class="footer-brand">
-                <div class="footer-logo-name">ADIC</div>
-                <div class="footer-logo-sub">AMCET Digital Innovation Cell</div>
+                <div class="footer-logo-wrap">
+                    <img src="assets/logo.jpeg" alt="ADIC Logo" class="footer-logo-img">
+                    <div class="footer-logo-text">
+                        <div class="footer-logo-name">ADIC</div>
+                        <div class="footer-logo-sub">AMCET DIGITAL INNOVATION CELL</div>
+                    </div>
+                </div>
                 <p>
-                    A student-led initiative turning ideas into impactful digital solutions for our campus.
+                    A student-led initiative turning ideas into impactful digital solutions for our campus community.
                 </p>
+                <div class="footer-tagline">Think · Build · Innovate</div>
 
                 <div class="footer-contact-list">
-
                     <div class="footer-contact-item">
                         <div class="footer-contact-icon">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
                         </div>
                         <div class="footer-contact-info">
                             <span>Email</span>
@@ -574,15 +455,13 @@
 
                     <div class="footer-contact-item">
                         <div class="footer-contact-icon">
-                            <i class="fas fa-location-dot"></i>
+                            <i class="fas fa-location-dot" aria-hidden="true"></i>
                         </div>
                         <div class="footer-contact-info">
-                            <span>Address</span>
-                            <a href="https://maps.google.com/?q=Annai+Mira+College+of+Engineering+and+Technology,+Ranipet,+Tamil+Nadu"
-                                target="_blank" rel="noopener noreferrer">amcet, ranipet, tn</a>
+                            <span>Campus</span>
+                            <a href="https://maps.google.com/?q=Annai+Mira+College+of+Engineering+and+Technology,+Ranipet,+Tamil+Nadu" target="_blank" rel="noopener noreferrer">AMCET, Ranipet, Tamil Nadu</a>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -590,12 +469,12 @@
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#vision">Why We Exist</a></li>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#vision">Why We Exist</a></li>
                     <li><a href="domains.html">Technology Domains</a></li>
                     <li><a href="Projects.html">Projects</a></li>
-                    <li><a href="#join">Join ADIC</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html#join">Join ADIC</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -603,34 +482,36 @@
             <div class="footer-col">
                 <h4>Domains</h4>
                 <ul>
-                    <li><a href="#domains">Web Development</a></li>
-                    <li><a href="#domains">UI / UX Design</a></li>
-                    <li><a href="#domains">AI &amp; Machine Learning</a></li>
-                    <li><a href="#domains">Cloud &amp; DevOps</a></li>
-                    <li><a href="#domains">Data Analytics</a></li>
+                    <li><a href="domains.html">Web Development</a></li>
+                    <li><a href="domains.html">Mobile App Development</a></li>
+                    <li><a href="domains.html">UI / UX Design</a></li>
+                    <li><a href="domains.html">AI &amp; Machine Learning</a></li>
+                    <li><a href="domains.html">Cloud &amp; DevOps</a></li>
+                    <li><a href="domains.html">Data Analytics</a></li>
                 </ul>
             </div>
-
-
-
         </div>
-
 
         <div class="footer-bottom">
-            <p>&copy; 2026 ADIC &mdash; AMCET DIGITAL INNOVATION CELL. <span>ALL RIGHTS RESERVED.</span></p>
+            <p>
+                &copy; 2026 ADIC &mdash; AMCET DIGITAL INNOVATION CELL. <span>ALL RIGHTS RESERVED.</span>
+            </p>
             <div class="footer-socials">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                 </a>
-                <a href="https://github.com/Amcet-Digital-Innovation-Cell" target="_blank" rel="noopener noreferrer"
-                    title="GitHub">
-                    <i class="fab fa-github"></i>
+                <a href="https://github.com/Amcet-Digital-Innovation-Cell" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
                 </a>
-
+                <a href="mailto:adic@amcet.in" title="Email Us" aria-label="Email Us">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
-
     </footer>
+
+    <!-- Interactive Navigation Scripts -->
+    <script src="assets/main.js"></script>
 
 </body>
 

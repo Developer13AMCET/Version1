@@ -1,401 +1,314 @@
 <!DOCTYPE html>
 <html lang="en" class="page-domains">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADIC - Technology Domains</title>
+    <title>ADIC — Technology Domains</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
 
-<!-- ==================================================
-                    NAVBAR
-=================================================== -->
+    <!-- =========================================================
+         NAVBAR (IDENTICAL ACROSS ALL PAGES)
+    ========================================================== -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html#home" class="logo" aria-label="ADIC Home">
+                <img src="assets/logo.jpeg" alt="ADIC Logo" class="adic-logo">
+                <div class="logo-text">
+                    <span class="logo-main">AMCET DIGITAL INNOVATION CELL</span>
+                    <span class="logo-sub">STUDENT-LED INITIATIVE</span>
+                </div>
+            </a>
 
-<nav class="navbar">
+            <!-- Mobile Hamburger Toggle -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-        <div class="logo">
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#vision">Why We Exist</a></li>
+                <li><a href="domains.html" class="active">Technology Domains</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#join" class="nav-btn-join">Join ADIC</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <img src="assets/logo.jpeg" alt="ADIC Logo" class="adic-logo">
 
-            <div class="logo-text">
+    <!-- =========================================================
+         MAIN CONTENT
+    ========================================================== -->
+    <main>
 
-                <span class="logo-main">AMCET DIGITAL INNOVATION CELL</span>
-
-            </div>
-
-        </div>
-
-
-        <ul class="nav-links">
-
-            <li>
-                <a href="index.html">
-                    Home
-                </a>
-            </li>
-
-            <li>
-                <a href="index.html#vision">
-                    Why We Exist
-                </a>
-            </li>
-
-            <li>
-                <a href="domains.html" class="active">
-                    Technology Domain
-                </a>
-            </li>
-
-            <li>
-                <a href="Projects.html">
-                    Projects
-                </a>
-            </li>
-
-            <li>
-                <a href="index.html#join">
-                    Join ADIC
-                </a>
-            </li>
-
-            <li>
-                <a href="index.html#contact">
-                    Contact
-                </a>
-            </li>
-
-        </ul>
-
-    </nav>
-
-</header>
-
-<!-- ==================================================
-                TECHNOLOGY DOMAINS
-=================================================== -->
-
-<section class="focus-areas" id="domains">
-
-    <div class="container">
-
-        <div class="section-title">
-            <span>OUR TECHNOLOGY DOMAINS</span>
-            <h2>Areas We Explore & Build</h2>
-        </div>
-
-        <div class="focus-grid">
-
-            <!-- CARD 1 -->
-
-            <div class="focus-card">
-
-                <div class="icon">
-                    <i class="fas fa-code"></i>
+        <!-- =====================================================
+             TECHNOLOGY DOMAINS
+        ====================================================== -->
+        <section class="focus-areas" id="domains">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">OUR TECHNOLOGY DOMAINS</span>
+                    <h2 class="section-heading">Areas We Explore &amp; Build</h2>
+                    <p class="section-sub">
+                        Explore the cutting-edge disciplines where ADIC students learn, experiment, and engineer real-world software products.
+                    </p>
                 </div>
 
-                <h3>Web Application Development</h3>
+                <div class="focus-grid">
+                    <!-- CARD 1 -->
+                    <div class="focus-card">
+                        <div class="icon">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                        </div>
+                        <h3>Web Application Development</h3>
+                        <p>
+                            Designing and developing modern web applications, enterprise portals, dashboards, and digital solutions that solve real-world problems while delivering secure, scalable, and user-friendly experiences.
+                        </p>
+                    </div>
 
-                <p>
-                    Designing and developing modern web applications,
-                    enterprise portals, dashboards, and digital solutions
-                    that solve real-world problems while delivering
-                    secure, scalable, and user-friendly experiences.
-                </p>
+                    <!-- CARD 2 -->
+                    <div class="focus-card">
+                        <div class="icon">
+                            <i class="fas fa-mobile-screen-button" aria-hidden="true"></i>
+                        </div>
+                        <h3>Mobile App Development</h3>
+                        <p>
+                            Building Android, iOS, and cross-platform applications using modern frameworks like Flutter and React Native to deliver responsive, seamless digital experiences on the go.
+                        </p>
+                    </div>
 
+                    <!-- CARD 3 -->
+                    <div class="focus-card">
+                        <div class="icon">
+                            <i class="fas fa-pen-ruler" aria-hidden="true"></i>
+                        </div>
+                        <h3>UI / UX Design</h3>
+                        <p>
+                            Creating intuitive, accessible, and visually captivating design systems and prototypes that bridge user needs with engineering excellence.
+                        </p>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="focus-card">
+                        <div class="icon">
+                            <i class="fas fa-cloud" aria-hidden="true"></i>
+                        </div>
+                        <h3>Cloud &amp; DevOps</h3>
+                        <p>
+                            Mastering cloud platforms, CI/CD automated deployment pipelines, Docker containerization, and scalable infrastructure management for resilient production systems.
+                        </p>
+                    </div>
+
+                    <!-- CARD 5 -->
+                    <div class="focus-card">
+                        <div class="icon">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        </div>
+                        <h3>Data Analytics</h3>
+                        <p>
+                            Transforming raw information into actionable business intelligence using statistical modeling, interactive visualization, and modern analytics stacks.
+                        </p>
+                    </div>
+
+                    <!-- CARD 6 -->
+                    <div class="focus-card">
+                        <div class="icon">
+                            <i class="fas fa-brain" aria-hidden="true"></i>
+                        </div>
+                        <h3>Artificial Intelligence &amp; ML</h3>
+                        <p>
+                            Engineering intelligent models, computer vision pipelines, natural language processing tools, and predictive algorithms to solve non-trivial campus problems.
+                        </p>
+                    </div>
+
+                    <!-- CARD 7 -->
+                    <div class="focus-card">
+                        <div class="icon">
+                            <i class="fas fa-microchip" aria-hidden="true"></i>
+                        </div>
+                        <h3>Internet of Things (IoT)</h3>
+                        <p>
+                            Connecting hardware sensors and microcontrollers with cloud backends for real-time telemetry, live vehicle tracking, and campus automation.
+                        </p>
+                    </div>
+
+                    <!-- CARD 8 -->
+                    <div class="focus-card">
+                        <div class="icon">
+                            <i class="fas fa-network-wired" aria-hidden="true"></i>
+                        </div>
+                        <h3>Network Administration</h3>
+                        <p>
+                            Managing network infrastructure, routing, bandwidth optimization, firewalls, and security policies for uninterrupted and reliable campus connectivity.
+                        </p>
+                    </div>
+
+                    <!-- CARD 9 -->
+                    <div class="focus-card">
+                        <div class="icon">
+                            <i class="fas fa-database" aria-hidden="true"></i>
+                        </div>
+                        <h3>Database Management</h3>
+                        <p>
+                            Architecting robust relational and NoSQL database schemas, indexing strategies, data integrity constraints, and scalable storage pipelines.
+                        </p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <!-- CARD 2 -->
 
-            <div class="focus-card">
-
-                <div class="icon">
-                    <i class="fas fa-mobile-screen-button"></i>
+        <!-- =====================================================
+             BENEFITS SECTION
+        ====================================================== -->
+        <section class="benefits">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">WHY EXPLORE THESE DOMAINS</span>
+                    <h2 class="section-heading">Benefits of Learning Technology Domains</h2>
+                    <p class="section-sub">
+                        Accelerate your technical foundation through project-driven specialization and peer collaboration.
+                    </p>
                 </div>
 
-                <h3>Mobile App Development</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fas fa-rocket" aria-hidden="true"></i>
+                        <h4>Career Growth</h4>
+                        <p>
+                            Gain in-demand skills and portfolio projects that open doors to high-impact software roles and internships across global tech industries.
+                        </p>
+                    </div>
 
-                <p>
-                    Building Android and cross-platform mobile applications
-                    that improve accessibility, productivity, and engagement
-                    through responsive interfaces and seamless performance.
-                </p>
+                    <div class="benefit-item">
+                        <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                        <h4>Applied Innovation</h4>
+                        <p>
+                            Develop innovative solutions that solve real challenges for students, teachers, and administration instead of just theoretical exercises.
+                        </p>
+                    </div>
 
-            </div>
-
-            <!-- CARD 3 -->
-
-            <div class="focus-card">
-
-                <div class="icon">
-                    <i class="fas fa-pen-ruler"></i>
+                    <div class="benefit-item">
+                        <i class="fas fa-users" aria-hidden="true"></i>
+                        <h4>Cross-Domain Collaboration</h4>
+                        <p>
+                            Work with talented peers across engineering streams, learning how multi-disciplinary teams collaborate in professional tech companies.
+                        </p>
+                    </div>
                 </div>
-
-                <h3>UI / UX Design</h3>
-
-                <p>
-                    Creating intuitive, accessible, and visually engaging
-                    user interfaces that enhance usability while providing
-                    a smooth and meaningful digital experience.
-                </p>
-
             </div>
+        </section>
 
-            <!-- CARD 4 -->
+    </main>
 
-            <div class="focus-card">
 
-                <div class="icon">
-                    <i class="fas fa-cloud"></i>
+    <!-- =========================================================
+         FOOTER (IDENTICAL ACROSS ALL PAGES)
+    ========================================================== -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <!-- Brand -->
+            <div class="footer-brand">
+                <div class="footer-logo-wrap">
+                    <img src="assets/logo.jpeg" alt="ADIC Logo" class="footer-logo-img">
+                    <div class="footer-logo-text">
+                        <div class="footer-logo-name">ADIC</div>
+                        <div class="footer-logo-sub">AMCET DIGITAL INNOVATION CELL</div>
+                    </div>
                 </div>
-
-                <h3>Cloud & DevOps</h3>
-
                 <p>
-                    Learning cloud platforms, deployment pipelines,
-                    automation, containerization, and infrastructure
-                    management for modern software development.
+                    A student-led initiative turning ideas into impactful digital solutions for our campus community.
                 </p>
+                <div class="footer-tagline">Think · Build · Innovate</div>
 
-            </div>
+                <div class="footer-contact-list">
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="footer-contact-info">
+                            <span>Email</span>
+                            <a href="mailto:adic@amcet.in">adic@amcet.in</a>
+                        </div>
+                    </div>
 
-            <!-- CARD 5 -->
-
-            <div class="focus-card">
-
-                <div class="icon">
-                    <i class="fas fa-chart-line"></i>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-location-dot" aria-hidden="true"></i>
+                        </div>
+                        <div class="footer-contact-info">
+                            <span>Campus</span>
+                            <a href="https://maps.google.com/?q=Annai+Mira+College+of+Engineering+and+Technology,+Ranipet,+Tamil+Nadu" target="_blank" rel="noopener noreferrer">AMCET, Ranipet, Tamil Nadu</a>
+                        </div>
+                    </div>
                 </div>
-
-                <h3>Data Analytics</h3>
-
-                <p>
-                    Transforming raw information into meaningful insights
-                    using visualization, statistics, and analytical tools
-                    to support smarter decision-making.
-                </p>
-
             </div>
 
-            <!-- CARD 6 -->
-
-            <div class="focus-card">
-
-                <div class="icon">
-                    <i class="fas fa-brain"></i>
-                </div>
-
-                <h3>Artificial Intelligence & Machine Learning</h3>
-
-                <p>
-                    Exploring intelligent systems, predictive models,
-                    deep learning, computer vision, NLP, and AI-powered
-                    innovations that solve real-world challenges.
-                </p>
-
-            </div>
-
-            <!-- CARD 7 -->
-
-            <div class="focus-card">
-
-                <div class="icon">
-                    <i class="fas fa-microchip"></i>
-                </div>
-
-                <h3>Internet of Things (IoT)</h3>
-
-                <p>
-                   Connecting GPS-enabled devices in buses to collect and transmit real-time location data, enabling passengers to track buses live through the application.
-        
-                </p>
-
-            </div>
-
-            <!-- CARD 10 -->
-
-            <div class="focus-card">
-
-                <div class="icon">
-                    <i class="fas fa-network-wired"></i>
-                </div>
-
-                <h3>Network Administration</h3>
-
-                <p>
-                    Managing and maintaining network infrastructure, ensuring
-                    connectivity, security, and optimal performance for
-                    organizations across all scales.
-                </p>
-
-            </div>
-
-            <!-- CARD 11 -->
-
-            <div class="focus-card">
-
-                <div class="icon">
-                    <i class="fas fa-database"></i>
-                </div>
-
-                <h3>Database Management</h3>
-
-                <p>
-                    Designing and managing robust database systems, optimizing
-                    queries, ensuring data integrity, and implementing
-                    scalable storage solutions.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ==================================================
-                BENEFITS SECTION
-=================================================== -->
-
-<section class="benefits">
-
-    <div class="container">
-
-        <div class="section-title">
-            <span>WHY EXPLORE THESE DOMAINS</span>
-            <h2>Benefits of Learning Technology Domains</h2>
-        </div>
-
-        <div class="benefits-grid">
-
-            <div class="benefit-item">
-                <i class="fas fa-rocket"></i>
-                <h4>Career Growth</h4>
-                <p>
-                    Gain in-demand skills that open doors to lucrative careers
-                    across industries and increase your professional value.
-                </p>
-            </div>
-
-            <div class="benefit-item">
-                <i class="fas fa-lightbulb"></i>
-                <h4>Innovation</h4>
-                <p>
-                    Develop cutting-edge solutions that address real-world
-                    challenges and make a positive impact on society.
-                </p>
-            </div>
-
-            <div class="benefit-item">
-                <i class="fas fa-users"></i>
-                <h4>Collaboration</h4>
-                <p>
-                    Work with talented peers, mentors, and industry experts
-                    to enhance your learning and build a strong network.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ==================================================
-                CTA SECTION
-=================================================== -->
-
-<section class="cta-section">
-
-    <div class="container">
-
-        <div class="cta-content">
-            <h2>Ready to Transform Your Skills?</h2>
-            <p>
-                Join ADIC and dive deep into any technology domain that interests you.
-                Learn from industry experts, build real projects, and become part of
-                a thriving community of innovators.
-            </p>
-            <div class="hero-buttons">
-                <a href="LandingPage.html#join" class="btn btn-primary">Join ADIC Now</a>
-                <a href="#contact" class="btn btn-secondary" style="color: #2563EB; border-color: #2563EB;">Learn More</a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ==================================================
-                FOOTER
-=================================================== -->
-
-<footer class="footer">
-
-    <div class="container">
-
-        <div class="footer-content">
-
+            <!-- Quick Links -->
             <div class="footer-col">
-                <h4>ADIC</h4>
+                <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#domains">Domains</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#vision">Why We Exist</a></li>
+                    <li><a href="domains.html">Technology Domains</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="index.html#join">Join ADIC</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
                 </ul>
             </div>
 
+            <!-- Domains -->
             <div class="footer-col">
-                <h4>Resources</h4>
+                <h4>Domains</h4>
                 <ul>
-                    <li><a href="#">Tutorials</a></li>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Webinars</a></li>
+                    <li><a href="domains.html">Web Development</a></li>
+                    <li><a href="domains.html">Mobile App Development</a></li>
+                    <li><a href="domains.html">UI / UX Design</a></li>
+                    <li><a href="domains.html">AI &amp; Machine Learning</a></li>
+                    <li><a href="domains.html">Cloud &amp; DevOps</a></li>
+                    <li><a href="domains.html">Data Analytics</a></li>
                 </ul>
             </div>
-
-            <div class="footer-col">
-                <h4>Community</h4>
-                <ul>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Hackathons</a></li>
-                    <li><a href="#">Mentorship</a></li>
-                    <li><a href="#">Discussions</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Contact</h4>
-                <ul>
-                    <li><a href="mailto:info@adic.org">Email: info@adic.org</a></li>
-                    <li><a href="#">Phone: +1 (555) 123-4567</a></li>
-                    <li><p style="margin-top: 15px;">Follow Us</p></li>
-                </ul>
-                <div class="footer-social">
-                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 ADIC - All rights reserved. | <a href="#" style="color: #cbd5e1;">Privacy Policy</a> | <a href="#" style="color: #cbd5e1;">Terms of Service</a></p>
+            <p>
+                &copy; 2026 ADIC &mdash; AMCET DIGITAL INNOVATION CELL. <span>ALL RIGHTS RESERVED.</span>
+            </p>
+            <div class="footer-socials">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/Amcet-Digital-Innovation-Cell" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:adic@amcet.in" title="Email Us" aria-label="Email Us">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
+    </footer>
 
-    </div>
-
-</footer>
+    <!-- Interactive Navigation Scripts -->
+    <script src="assets/main.js"></script>
 
 </body>
+
 </html>
