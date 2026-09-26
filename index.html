@@ -336,9 +336,9 @@
                 </div>
 
                 <div class="join-right">
-                    <form class="join-form" action="https://formsubmit.co/monikagopi3@gmail.com" method="POST">
+                    <form class="join-form" id="joinForm" action="https://formsubmit.co/monikagopi3@gmail.com" method="POST">
                         <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://developer13amcet.github.io/ADIC-Landing-page/">
+                        <input type="hidden" name="_subject" value="New ADIC Membership Application">
 
                         <div class="input-group">
                             <label for="full-name">Full Name</label>
@@ -378,7 +378,9 @@
                             </select>
                         </div>
 
-                        <button type="submit" class="join-btn">Submit Application</button>
+                        <div id="joinStatus" class="form-status-msg" style="display: none;" role="alert"></div>
+
+                        <button type="submit" class="join-btn" id="joinSubmitBtn">Submit Application</button>
                     </form>
                 </div>
             </div>
